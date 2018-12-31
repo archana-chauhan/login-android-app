@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to OnTime Job !"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ontime_textview"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:id="@+id/logo_imageview"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ontime_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter your Details"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_imageview"
+        android:textColor="#fff"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:id="@+id/details_text"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:layout_below="@+id/details_text"
+        android:background="@drawable/edittext_round_bg"
+        android:hint="Contact Number"
+        android:padding="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/contact_icon"
+        android:drawablePadding="10dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_round_bg"
+        android:layout_below="@+id/contact"
+        android:hint="Full Name"
+        android:drawableLeft="@drawable/baseline_account_circle_black_24"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawablePadding="10dp"
+
+
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_button"
+        android:layout_below="@+id/name"
+        android:id="@+id/submit"
+        android:padding="11dp"
+        android:src="@drawable/button_48"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register Now!"
+        android:textSize="20sp"
+        android:layout_below="@+id/submit"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>

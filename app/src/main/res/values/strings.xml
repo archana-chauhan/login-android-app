@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+
+    <string name="resend"><u>Resend Code</u></string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>

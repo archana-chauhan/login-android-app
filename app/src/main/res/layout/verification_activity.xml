@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/ver"
+    tools:context=".VerificationActivity"
+
+
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Enter the Code \nWe have sent on your mobile\n +9100000000"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:id="@+id/text1"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#fff"
+        android:padding="30dp"
+
+
+
+        />
+
+
+    <EditText
+
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edit_verification"
+
+        android:paddingLeft="30dp"
+        android:inputType="number"
+        android:textSize="25sp"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+
+        android:hint="Enter Code"
+
+        android:padding="10dp"
+        android:visibility="visible"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive the Verification Code?"
+        android:id="@+id/text2"
+        android:layout_below="@+id/edit_verification"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend"
+        android:textAllCaps="true"
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/resend"
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>
